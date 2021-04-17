@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is a simple portfolio page with a working contact form using forspree.
+This project is a simple portfolio page with a working contact form using forspree. Site is responsive (mobile friendly) and accessible.
 	
 ## Technologies
 Project is created with:
