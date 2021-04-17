@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #232327;
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  margin-left: 1%;
+  min-height: 8vh;
+  color: #A9EDD7;
+  font-family: sans-serif;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.header-nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-nav a {
+  color: #A9EDD7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease 0s;
+}
+
+.header-nav li a:hover {
+  color: white;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #A9EDD7;
+  margin: 5px;
+}
+
+.logo {
+  display: block;
+  height: 15vmin;
+  width: 15vmin;
+  margin: 0 auto;
+}
+
+.logo img {
+  color: #A9EDD7;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.content-intro {
+  font-family: 'Roboto Mono', monospace;
+  color: #FFFFFF;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-skills h2 {
+  color: #A9EDD7;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 0;
+}
+
+.content-skills {
+  font-family: Roboto Mono;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-interest h2 {
+  color: #A9EDD7;
+  margin-bottom: 0;
+}
+
+.content-interest {
+  font-family: Roboto Mono;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-interest ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-form h2, form {
+  color: #A9EDD7;
+}
+
+.content-form {
+  font-family: Roboto Mono;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#formname, #formemail, #formmessage {
+  width: 100%;
+  background: #232327;
+  border: 1px solid #E5E5E5;
+  color: #E5E5E5;
+  padding: 5px;
+}
+
+input[type=submit] {
+  width: 100%;
+  border: none;
+  background-color: #A9EDD7;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+  .header-nav {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body {
+    overflow-x: hidden;
+  }
+  .header-nav {
+    position: absolute;
+    right: 0;
+    height: 88vh;
+    top: 8vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+
+  }
+  .header-nav {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
